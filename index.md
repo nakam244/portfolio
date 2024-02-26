@@ -89,10 +89,14 @@ C#と設計を中心に勉強しています。
 
 ## ステートマシン  
 ![](images/editor_state_1.png)  
+
 **Action**と**Transition**を組み合わせて、ステートを構築することができるエディタです。Transitionは**Condition**の組み合わせで定義されます。  
 特定のクラスを継承して実装すると、エディタ上で**Action**、または**Condition**として使用できるようになります。  
+
 ![](images/editor_state_3.png)  
+
 これらのクラスはコンテキストメニューからテンプレートを生成することができます。
+
 ![](images/editor_state_4.png)  
 
 ## コースエディタ
