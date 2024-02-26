@@ -18,6 +18,7 @@ C#と設計を中心に勉強しています。
 | C++       | ★★★☆☆☆ |
 | DirectX   | ★★☆☆☆☆ |
 | HLSL/GLSL | ★★★☆☆☆ |
+| GitHub    | ★★★☆☆☆ |
 
 # 目次
 - [2Dゲーム](#2d)
@@ -31,8 +32,7 @@ C#と設計を中心に勉強しています。
 
 # 2D
 ## クックストライク
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CG_xRZioAYI?si=-OQR1SQbavKKfZyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CG_xRZioAYI?si=-OQR1SQbavKKfZyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 23年8月頃に行われた「プロトスプリントリーグ」(ゲームジャム)で制作した作品です。  
 全5チームの作品の中から優秀賞に選ばれました。  
 
@@ -46,7 +46,6 @@ C#と設計を中心に勉強しています。
 
 ## パピルスのだいぼうけん
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Axn6NJHxkwI?si=4YG3XoPowgJ5g_7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-
 ゴムを使ったワイヤーアクションです。ゴムを引っ張ってゴムパッチン！したり、ゴムの反動で勢いよくキックしたりして、敵を倒しながら進んでいきます。
 
 チーム人数 6人  
@@ -57,6 +56,7 @@ C#と設計を中心に勉強しています。
 
 ## スライムラッシュ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0nTE3o13VbQ?si=dIgHULWg1kaEJ1P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+日本ゲーム大賞2022アマチュア部門に向けて制作した作品です。
 
 チーム人数 5人  
 制作期間 2か月  
@@ -66,8 +66,7 @@ C#と設計を中心に勉強しています。
 
 # 3D
 ## Impact!
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5e127fNT6hk?si=pbRNUQkbs_f3l5Dt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5e127fNT6hk?si=pbRNUQkbs_f3l5Dt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 全国専門学校ゲームコンペティションに向けて制作した作品です。
 ファイナリストに選ばれました。
 
@@ -75,10 +74,10 @@ C#と設計を中心に勉強しています。
 制作期間 2週間  
 
 ## アマツバメ
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cyGH6isQOco?si=ej6P3KKHTXOzrlKr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cyGH6isQOco?si=ej6P3KKHTXOzrlKr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 チーム人数 6人  
-制作期間 2ヵ月半  
+制作中  
 
 主な担当箇所  
 設計, ゲーム進行制御, レール制御, カメラ制御, [エディター](#コースエディタ)  
@@ -89,9 +88,12 @@ C#と設計を中心に勉強しています。
 インスペクタから配置したいオブジェクトを選択して、ワンボタンで配置できます。
 
 ## ステートマシン  
-特定のクラスを継承して「Action」と「Transition」を実装すると、エディタ上で使用できるようになります。  
-複数のActionやTransitionを組み合わせてステートを作成することができます。  
-エディタ上で任意のステートの参照を指定することができ、遷移先の指定に使うことができます。
+![](images/editor_state_1.png)  
+**Action**と**Transition**を組み合わせて、ステートを構築することができるエディタです。Transitionは**Condition**の組み合わせで定義されます。  
+特定のクラスを継承して実装すると、エディタ上で**Action**、または**Condition**として使用できるようになります。  
+![](images/editor_state_3.png)  
+これらのクラスはコンテキストメニューからテンプレートを生成することができます。
+![](images/editor_state_4.png)  
 
 ## コースエディタ
 レールシューターのステージを作るために制作したエディタです。Timelineを拡張しています。  
