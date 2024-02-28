@@ -11,14 +11,14 @@ C#と設計を中心に勉強しています。
 ## 使用できる言語/ツール  
 一番自信のあるC#を基準に考えています。
 
-| 言語/ツール  | 習熟度 |
-|-----------|--------|
-| C#        | ★★★★★☆ |
-| Unity     | ★★★★★☆ |
-| C++       | ★★★☆☆☆ |
-| DirectX   | ★★☆☆☆☆ |
-| HLSL/GLSL | ★★★☆☆☆ |
-| GitHub    | ★★★☆☆☆ |
+| 言語/ツール  | 習熟度 | 備考 |
+|-----------|--------|------|
+| C#        | ★★★★★☆ |      |
+| Unity     | ★★★★★☆ |      |
+| C++       | ★★★☆☆☆ |      |
+| DirectX   | ★★☆☆☆☆ |      |
+| HLSL/GLSL | ★★★☆☆☆ |      |
+| GitHub    | ★★★☆☆☆ |      |
 
 # 目次
 - [2Dゲーム](#2d)
@@ -33,6 +33,7 @@ C#と設計を中心に勉強しています。
 # 2D
 ## クックストライク
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CG_xRZioAYI?si=-OQR1SQbavKKfZyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
 23年8月頃に行われた「プロトスプリントリーグ」(ゲームジャム)で制作した作品です。  
 全5チームの作品の中から優秀賞に選ばれました。  
 
@@ -45,7 +46,8 @@ C#と設計を中心に勉強しています。
 [unityroom](https://unityroom.com/games/cook-strike)で遊ぶことができます。  
 
 ## パピルスのだいぼうけん
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Axn6NJHxkwI?si=4YG3XoPowgJ5g_7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Axn6NJHxkwI?si=4YG3XoPowgJ5g_7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
 ゴムを使ったワイヤーアクションです。ゴムを引っ張ってゴムパッチン！したり、ゴムの反動で勢いよくキックしたりして、敵を倒しながら進んでいきます。
 
 チーム人数 6人  
@@ -56,6 +58,7 @@ C#と設計を中心に勉強しています。
 
 ## スライムラッシュ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0nTE3o13VbQ?si=dIgHULWg1kaEJ1P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
 日本ゲーム大賞2022アマチュア部門に向けて制作した作品です。
 
 チーム人数 5人  
@@ -67,6 +70,7 @@ C#と設計を中心に勉強しています。
 # 3D
 ## Impact!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5e127fNT6hk?si=pbRNUQkbs_f3l5Dt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
 全国専門学校ゲームコンペティションに向けて制作した作品です。
 ファイナリストに選ばれました。
 
@@ -84,8 +88,10 @@ C#と設計を中心に勉強しています。
 
 # エディタ拡張/その他
 ## ステージエディタ
-シーンビュー上にグリッドを表示して、その上にオブジェクトを配置できるエディタです。
-インスペクタから配置したいオブジェクトを選択して、ワンボタンで配置できます。
+![](images/editor_grid.png)  
+
+シーンビューに表示されたグリッド上に、オブジェクトを設置できるエディタです。  
+インスペクターからオブジェクトを選択して、ワンボタンで設置できます。
 
 ## ステートマシン  
 ![](images/editor_state_1.png)  
@@ -99,7 +105,15 @@ C#と設計を中心に勉強しています。
 
 ![](images/editor_state_4.png)  
 
-## コースエディタ
-レールシューターのステージを作るために制作したエディタです。Timelineを拡張しています。  
-Splineを使って作ったレール上を、どの時間でどこまで移動するのかを設定したり、カメラの向きや回転、イージングを設定したりできるようにしました。  
-また、敵の出現タイミングもTimelineから設定できるようにしています。
+## ファイルを開くアプリを指定する
+![](images/editor_file_opener.png) 
+
+エディター上でダブルクリックした際に、どのアプリで開くのかを設定するための拡張です。  
+この画像の場合は".shader"と".hlsl"がVisual Studio Codeで開かれるように設定しています。  
+
+
+## シーンを開く
+![](image.png)  
+
+シーンビュー上に常駐しているツールバーから、シーンを開くことができるショートカットです。  
+ファイルやフォルダが増え、深くなった階層からでもすぐに目的のシーンを開くことができ、便利で気に入っています。
